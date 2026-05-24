@@ -618,10 +618,9 @@ h3 {
 .lightbox-image {
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  box-shadow: 0 32px 90px rgba(0, 0, 0, 0.34);
-  height: min(82vh, 900px);
-  width: min(92vw, 1180px);
+  background-size: contain;
+  height: 86vh;
+  width: 92vw;
 }
 
 .lightbox-caption {
@@ -798,7 +797,7 @@ h3 {
   }
 
   .lightbox-image {
-    height: min(78vh, 720px);
+    height: 80vh;
     max-width: 100%;
     width: 100%;
   }
