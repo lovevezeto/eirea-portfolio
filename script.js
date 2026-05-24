@@ -179,10 +179,6 @@ function renderAlbumPage() {
   document.querySelector("[data-album-type]").textContent = album.type;
   document.querySelector("[data-album-scope]").textContent = album.scope;
 
-  const feature = document.querySelector("[data-gallery-feature]");
-  feature.className = `gallery-feature ${album.covers[0]}`;
-  feature.setAttribute("aria-label", `${album.title} 主視覺`);
-
   galleryGrid.innerHTML = album.covers
     .map(
       (cover, index) => `
