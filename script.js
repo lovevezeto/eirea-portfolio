@@ -171,7 +171,7 @@ function renderAlbumPage() {
   const albumId = params.get("id") || "photo-portrait";
   const album = albums[albumId] || albums["photo-portrait"];
 
-  document.title = `${album.title} | Atelier Mori`;
+  document.title = `${album.title} | 張詠淇｜設計作品集`;
   titleNode.textContent = album.title;
   document.querySelector("[data-album-category]").textContent = album.category;
   document.querySelector("[data-album-description]").textContent = album.description;
