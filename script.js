@@ -3,6 +3,10 @@ const menuToggle = document.querySelector(".menu-toggle");
 const nav = document.querySelector(".site-nav");
 const filterButtons = document.querySelectorAll(".filter-button");
 const albumCards = document.querySelectorAll(".album-card");
+const lightbox = document.querySelector("[data-lightbox]");
+const lightboxImage = document.querySelector("[data-lightbox-image]");
+const lightboxCaption = document.querySelector("[data-lightbox-caption]");
+const lightboxClose = document.querySelector("[data-lightbox-close]");
 
 const albums = {
   "photo-portrait": {
@@ -183,13 +187,59 @@ function renderAlbumPage() {
     .map(
       (cover, index) => `
         <figure class="gallery-item">
-          <div class="gallery-image ${cover}" role="img" aria-label="${album.title} 圖片 ${index + 1}"></div>
+          <button
+            class="gallery-thumb"
+            type="button"
+            data-cover="${cover}"
+            data-caption="${album.title} / ${String(index + 1).padStart(2, "0")}"
+            aria-label="放大檢視 ${album.title} 圖片 ${index + 1}"
+          >
+            <span class="gallery-image ${cover}"></span>
+          </button>
           <figcaption>${album.title} / ${String(index + 1).padStart(2, "0")}</figcaption>
         </figure>
       `
     )
     .join("");
 }
+
+function openLightbox(cover, caption) {
+  if (!lightbox || !lightboxImage || !lightboxCaption) return;
+
+  lightboxImage.className = `lightbox-image ${cover}`;
+  lightboxImage.setAttribute("aria-label", caption);
+  lightboxCaption.textContent = caption;
+  lightbox.classList.add("open");
+  lightbox.setAttribute("aria-hidden", "false");
+  document.body.classList.add("is-lightbox-open");
+}
+
+function closeLightbox() {
+  if (!lightbox) return;
+
+  lightbox.classList.remove("open");
+  lightbox.setAttribute("aria-hidden", "true");
+  document.body.classList.remove("is-lightbox-open");
+}
+
+document.addEventListener("click", (event) => {
+  const thumb = event.target.closest("[data-cover]");
+
+  if (thumb) {
+    openLightbox(thumb.dataset.cover, thumb.dataset.caption);
+    return;
+  }
+
+  if (event.target === lightbox || event.target === lightboxClose) {
+    closeLightbox();
+  }
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    closeLightbox();
+  }
+});
 
 window.addEventListener("scroll", updateHeader, { passive: true });
 updateHeader();

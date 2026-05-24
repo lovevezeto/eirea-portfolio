@@ -559,17 +559,33 @@ h3 {
 .gallery-grid {
   display: grid;
   gap: 22px;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .gallery-item {
   margin: 0;
 }
 
+.gallery-thumb {
+  background: transparent;
+  border: 0;
+  cursor: zoom-in;
+  display: block;
+  padding: 0;
+  width: 100%;
+}
+
 .gallery-image {
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 1 / 1;
   background-size: cover;
   border: 1px solid var(--line);
+  display: block;
+  transition: filter 0.2s ease, transform 0.2s ease;
+}
+
+.gallery-thumb:hover .gallery-image {
+  filter: saturate(1.04) contrast(1.02);
+  transform: translateY(-4px);
 }
 
 .gallery-item figcaption {
@@ -578,6 +594,64 @@ h3 {
   font-weight: 700;
   margin-top: 10px;
   text-transform: uppercase;
+}
+
+.is-lightbox-open {
+  overflow: hidden;
+}
+
+.lightbox {
+  align-items: center;
+  background: rgba(47, 45, 41, 0.82);
+  display: none;
+  inset: 0;
+  justify-content: center;
+  padding: 86px clamp(18px, 5vw, 64px) 42px;
+  position: fixed;
+  z-index: 50;
+}
+
+.lightbox.open {
+  display: flex;
+}
+
+.lightbox-image {
+  aspect-ratio: 4 / 5;
+  background-size: cover;
+  box-shadow: 0 32px 90px rgba(0, 0, 0, 0.34);
+  max-height: min(78vh, 820px);
+  max-width: min(86vw, 780px);
+  width: min(86vw, 620px);
+}
+
+.lightbox-caption {
+  bottom: 22px;
+  color: var(--paper);
+  font-size: 0.86rem;
+  font-weight: 700;
+  left: 50%;
+  margin: 0;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  transform: translateX(-50%);
+}
+
+.lightbox-close {
+  align-items: center;
+  background: var(--paper);
+  border: 0;
+  color: var(--charcoal);
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 2rem;
+  height: 44px;
+  justify-content: center;
+  line-height: 1;
+  position: absolute;
+  right: clamp(18px, 4vw, 46px);
+  top: 24px;
+  width: 44px;
 }
 
 .album-next {
@@ -668,7 +742,7 @@ h3 {
   }
 
   .gallery-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
@@ -720,7 +794,16 @@ h3 {
   }
 
   .gallery-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lightbox {
+    padding-inline: 18px;
+  }
+
+  .lightbox-image {
+    max-width: 100%;
+    width: 100%;
   }
 
   .album-info {
