@@ -70,7 +70,7 @@ const albums = {
     type: "設計",
     scope: "宣傳物、資訊編排、印刷輸出",
     description: "將活動資訊與品牌質感整合在版面裡，讓讀者快速理解宣傳重點。",
-    covers: ["cover-01", "cover-03", "cover-02", "cover-04", "cover-06", "cover-05"],
+    covers: ["dm-image", "cover-03", "cover-02", "cover-04", "cover-06", "cover-05"],
   },
   card: {
     title: "貼紙設計",

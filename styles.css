@@ -378,6 +378,12 @@ h3 {
   background-size: cover;
 }
 
+.dm-image {
+  background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2GyMZHz5aAgx2WB1iVKThaIrY0MNeVeBMNbgMyLK0Sz6xl8kDq3b4nciayjrlzrhcHBRZsbaL6o6YgBJzzW9JeWisR7qodRuisw0V3A8r4zBe9pseailplKn9eh7v9dDYtkTYliO_9Zc/s0/001.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
 .cover-02 {
   background:
     linear-gradient(rgba(255, 255, 255, 0.05), rgba(47, 45, 41, 0.07)),
