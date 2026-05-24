@@ -372,6 +372,12 @@ h3 {
     linear-gradient(140deg, #eee8dc 0 18%, #a9ac9a 18% 40%, #d7c4ad 40% 70%, #766f66 70%);
 }
 
+.photo-scene-image {
+  background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiQ8E-fzzjZbGOMvKHkxKmndUxIi_925nS97anojtnrzBPplL-r1G-qzDWkoSuX3N8d47ANyQHRQ9u9bFU69H20wc56PY6MrsRxnnqPZnPpgMj8Q4M91_Lkjba7FX1373-vJtc5eB1AOZHBfKFQGZG1z_btv7C4yjzAHsK01eBqqrFEF1-CXW140nU/s1000/01.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
 .cover-02 {
   background:
     linear-gradient(rgba(255, 255, 255, 0.05), rgba(47, 45, 41, 0.07)),
@@ -485,6 +491,7 @@ h3 {
 }
 
 .album-hero {
+  padding-bottom: clamp(32px, 5vw, 64px);
   padding-top: 150px;
 }
 
@@ -549,6 +556,10 @@ h3 {
   display: grid;
   gap: 22px;
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.album-gallery {
+  padding-top: 0;
 }
 
 .gallery-item {
