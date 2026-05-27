@@ -16,7 +16,29 @@ const albums = {
     type: "攝影",
     scope: "拍攝企劃、修圖、色調整理",
     description: "以自然光和低飽和色彩捕捉生活場景，保留安靜、柔和且帶有故事感的氛圍。",
-    covers: ["photo-scene-image", "cover-02", "cover-03", "cover-04", "cover-05", "cover-06"],
+    covers: [
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCDpFbgPM2-cGIIAOkhy991MZ-NWHjv5BBMkhKvBXFJiiHpfSjCZzrlHt4NI25_V0FkPMPWwGy6o2jL5CRhGQkYl2fpgRGFVnBfjjrDAFThK-cTefhKxly1X2wcl5PsLknDEoO7uWAlSo/s0/DSC_0665_00001.jpg",
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiK8nFv5S_5s1QbBZBiFifO7X5p8UyzbBKLYv38gdsoiZcBnq4oWOwrH3LLgmFRUdxXJBafmvAI0d7uNig25cnX9QgGJVJ5meLH3yUPcJV4eePdDDDPrv3qvhRhnUFF903IA0kLM-n0NB0/s0/DSC_2524_01.jpg",
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkkgoqfDo0dhia3vZXhWM-J-Gj-0RHzJ0Jr4hWnpotwn2NKRuVDglqDY9fRrKKSs8oCJkA6DsLFC49wxxO5ZWDdBHk6E99zHa4snOLzTS9lSovVxWpfINFbFxVR1B0s0pCm7ay8PC8DFU/s0/DSC00397.jpg",
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgaPG32aa1dTJ2Tds26X-8v7QyevoZnH0R9ey1WnAx94UW0_Bcz_CKnOzkimgOS-WqHF7jpbsnKKtdNuf8Ev2IfVtUOmjPqAdSEsEO48yhuiZ-4_sxI80VDCvk2G8QAKVfLMw_1lVTEHyt7MREgm3BnMEFJqlWM9TeOkWPXgSXv4pwmaqnJOmzh04s/s16000/DSC_2189.JPG",
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqsuYLnusJKirs5Z0ontTAEdvfuuDVx9R_oB3yq0vB0rKm7adPSv5ODIP-nxXeUlI1MJZIoCEMg7Lp5Hi-wmR7LJslKG8HWddl_mL-B6mp6OW-ZCqkljwhJgG88SzveqOer_MWZsWLjhOIy3XgVNZqqLLSOkPaDcdmFSX2jK51d9kuM1Jy4uvlOZ0/s16000/DSC_2273.JPG",
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSyI1B73TKA19-xiHgxRGeZTcy3g9T5qIG6z4XvUpJozd5ZSwukXGXXqmbuuviJRLbQlqLxTB2ZYlYnW2-y3TDxX7H6NgpO2kO94k1fc2fduEX4DsuGi9vhAArPj-hBNDtzNWcUcNg4xNLcrYopLKdsIxkyNvdPVjm94LYyOaGsTWZE80vQX_R6-s/s16000/DSC_2285.JPG",
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPw1K8e0k4nB-SKHo_wJLJCsMDSe3zlAeVBKXXWipgH_0_j9DuSdYEzIlmKsD4DZUgRHmy07hKj-U6iY_U-Bq0Z1ICazBrrPBvyCw55Rk3p2NOq5-mUZMzg2-1uGYwOJi9q7j_CZgXDVa1P0t6s3Qln5sanOA4obhL67WCr00gxnvCi_PE6uIuT5E/s16000/DSC_2348.JPG",
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoZrioYmkK_3jt0SJPuG61d8PQaDZfoM9IzJBvA5UPxHkqA3pqnRN4EUYJJ4zr9jl81caBWmZwx1-vw6rtAybDoiVUz7MJEwBw7tN1qSbQlbpJwvno32kYVDWd4o54uXRl7zfuuEe1Ea0wjfOHUevab9To4QKDrPPq-UZnMHV4PxgWqVuXxoUKuno/s16000/DSC_2953.JPG",
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_2T807XZ9ZdXTOcQi_jcqlZvFvG3Ni0J8Lrq71oOWyTQm-PCFk7-hSS9EGlkZdrJEs16rhf-5ZS-SXCt1W0e1QWz-5ChF-L7mdlSRSRICB4l57Oy9W5bGY-V606EawaHElKkcDiusXR8TRLc5XWCTSSyWF6rxu0dCextyH-zgJgvRpdJ_en_1okk/s16000/DSC_1659.JPG",
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisY_RlU7BQhfssuTwNybpSMWwz_Z-ZIsRBe6n7GOzgarZig0MpEUaSCgyYvXJvm0AAfD7xPR10OzznTBDV86a9HVOE30vWiX-C3CkC_1ksDAY-Y1yA_NQuacgjsR1Ra_MI6MFQy8J2ofc/s0/DSC_0885_00001.jpg",
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiuH2vl8_iP0VipGly0BR76Xj7Z66MUGEMN2xcMo5lt32IpUP2aba_bxA1W3uBFVA1PSa1fxLEdO4lQ2sb08y5TRiFb3rcP4KeGrvTid4ydynxXEPevKFFtle4h55__cEwUJelauoQ900k/s0/DSC_1149_00001.jpg",
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBIXLvpAV_0YN7wg7GuCi1S7S7Psfpcf-K4jdltia9OIfRjRmJEIpC595mdG4py3JJC75jzAy3hiTfbUy3KLXBme10Zf3qkwwiMmqfSxOCGRvEfjcHbQJ5TGlPZujpLP8bSdko_eciEbM/s0/DSC_1167_00004.jpg",
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivVgqFhjOE4EPz1BzGEHzCeH5fv6FJrPpetBBlt09lVQ-8PVF64VGIrIjT7sLGhncrPL2_Z84hATgqRstljNKYhpM05Sp-n5z31h6wH48caEdQQH6II24LarThZL0DsQNZY612I-V1e-g/s0/DSC_2471_00006.jpg",
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCSKsy7bfJ6WGfEwujpKg2GehuF4jo0ku5KhNYPUAWQzftOHop421R50J1A6YB8XtZI_95TNrxAeo7GMpplb1jtlvqX6KG1NrjTJM9bTPFID5w3bh_KSDgxFLO8RyzckMixAP-vxv585I/s0/DSC_2573.jpg",
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibAGLjrCpYsXVZ2eQKx5AzzEJ57j3xlT-Qf0HAaRVM86FK9fclGQJtskYubr5L1CJ5vmNlVpcuJLKEpp31HH87ummPJR-IG0MpgcO3iG0Fj8sBSNBOPt9oxlfFWBgkKQN7aXoWpAnmC9cyAfWRsWGZqaBNOpnSmHOujV9sdZxcVCkIlD6wHM7muB0/s16000/DSC_1730.JPG",
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-GfleO7ZoCE_OU5TbmSomC4-MaOZmJueGbmCjkhfQAUD6EsJZGlmbsgLSehTkUaVYbOJnbfb-B9qxNElH3-UD32TXVfEShrMJ-bfuCAYpEvNlYfTETW85bVx-RW_C4-hhwhVZPYwZaU3u_luVdvVZovq43rOGuyvkUr25dHOYUoBx9-PieqW9ZKc/s16000/%E4%BA%AE%E5%BD%A4%20(3).jpg",
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCQNmnZyIRUQIRFTJE6aMmv-GuHgfwfM5xB-xl7ALZt17teHzseIzY1ecEejj7ZFdASATrqydubsfk84kiq0ha_W8P0740rE60t7E1_C7psvUSJZV4tkm1N6mJbor-iAVb-2NQPYM_EYE/s0/20-A004-2.jpg",
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUX7HsZNnf_C9wPSf3cwJsPaisKMr7rJlUtrbFn_tR5kBT_UIzkRP0VBEHCa2od1TCeRkjUQX-dsDgnc1_RrqmKxBX2_OxJobRP2cluleQD_4hNTaktbgP5nggRwtQDKuo2EVOnCRkkQA/s0/30-A003-2.jpg",
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEn6ga2UH2SvSlPjZtjuTd107641R0gsiqpLmdPUPY0-1l6cxXO2GH2ZAldxLH7xnAY6XYZMy0CApMFNEPo2Yg7yN6odY4UhDa8H_0Tbnjt2Gf1bWjfOcJ4w6edX1316v33yUa_P2QFnA/s0/30-A011-0.jpg",
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvrp6kh_VP_tZOTR1xTDIDSF-HmMbHuBlm2__vfGs1AbHR0hOC1NaPhcHbHV67MGOt5Nb3xb_rLycxyJHaUwYJ2LHL-ktON87TZeyLkn3H9DJ0UW4COQ6Z0piRbmg0irC-N-aGbtQD8oo/s0/40-B004-2.jpg",
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhy-eD5aiLiw3z92U_4ocz5hNtB3zqEcAUG0tfDcOCed0YS6QluUHtwwkMoroxsWVcgsM8zenPHzXwfXb27UriPxrdA5aK0gW1J1xeSO5Oa8XIM3wnoCzRKzhD2igi_7rdGMxo_LTvnoHs/s0/50-A003-2.jpg",
+    ],
   },
   "brand-website": {
     title: "形象網站",
@@ -204,23 +226,45 @@ function renderAlbumPage() {
           <button
             class="gallery-thumb"
             type="button"
-            data-cover="${cover}"
+            data-cover="${escapeAttribute(cover)}"
             data-caption="${album.title} / ${String(index + 1).padStart(2, "0")}"
             aria-label="放大檢視 ${album.title} 圖片 ${index + 1}"
           >
-            <span class="gallery-image ${cover}"></span>
+            <span class="gallery-image${isImageUrl(cover) ? "" : ` ${cover}`}"></span>
           </button>
           <figcaption>${album.title} / ${String(index + 1).padStart(2, "0")}</figcaption>
         </figure>
       `
     )
     .join("");
+
+  galleryGrid.querySelectorAll("[data-cover]").forEach((button) => {
+    const cover = button.dataset.cover;
+    const image = button.querySelector(".gallery-image");
+
+    if (isImageUrl(cover)) {
+      image.style.backgroundImage = `url("${cover}")`;
+    }
+  });
+}
+
+function isImageUrl(value) {
+  return /^https?:\/\//.test(value);
+}
+
+function escapeAttribute(value) {
+  return String(value)
+    .replace(/&/g, "&amp;")
+    .replace(/"/g, "&quot;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
 }
 
 function openLightbox(cover, caption) {
   if (!lightbox || !lightboxImage || !lightboxCaption) return;
 
-  lightboxImage.className = `lightbox-image ${cover}`;
+  lightboxImage.className = `lightbox-image${isImageUrl(cover) ? "" : ` ${cover}`}`;
+  lightboxImage.style.backgroundImage = isImageUrl(cover) ? `url("${cover}")` : "";
   lightboxImage.setAttribute("aria-label", caption);
   lightboxCaption.textContent = caption;
   lightbox.classList.add("open");
